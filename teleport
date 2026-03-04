@@ -1,0 +1,11 @@
+# Import the api
+from mcpi_addons.minecraft import Minecraft
+# Initialize the api (MPCI must be open and in a world at this time)
+mc = Minecraft.create()
+mc.postToChat("Hello World!")
+
+x = input("X Coordinate: ")
+y = input("Y Coordinate: ")
+z = input("Z Coordinate: ")
+
+mc.player.setTilePos(int(x),int(y),int(z))
